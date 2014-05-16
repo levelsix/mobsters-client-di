@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF145B8F1925BF0600AD1D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145B8E1925BF0600AD1D5A /* Foundation.framework */; };
+		CF145B911925BF0600AD1D5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145B901925BF0600AD1D5A /* CoreGraphics.framework */; };
+		CF145B931925BF0600AD1D5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145B921925BF0600AD1D5A /* UIKit.framework */; };
+		CF145B991925BF0600AD1D5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF145B971925BF0600AD1D5A /* InfoPlist.strings */; };
+		CF145B9B1925BF0600AD1D5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF145B9A1925BF0600AD1D5A /* main.m */; };
+		CF145B9F1925BF0600AD1D5A /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF145B9E1925BF0600AD1D5A /* MSAppDelegate.m */; };
+		CF145BA11925BF0600AD1D5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF145BA01925BF0600AD1D5A /* Images.xcassets */; };
+		CF145BA81925BF0600AD1D5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145BA71925BF0600AD1D5A /* XCTest.framework */; };
+		CF145BA91925BF0600AD1D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145B8E1925BF0600AD1D5A /* Foundation.framework */; };
+		CF145BAA1925BF0600AD1D5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF145B921925BF0600AD1D5A /* UIKit.framework */; };
+		CF145BB21925BF0600AD1D5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF145BB01925BF0600AD1D5A /* InfoPlist.strings */; };
+		CF145BB41925BF0600AD1D5A /* MobSquadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF145BB31925BF0600AD1D5A /* MobSquadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF145BAB1925BF0600AD1D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF145B831925BF0600AD1D5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF145B8A1925BF0600AD1D5A;
+			remoteInfo = MobSquad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF145B8B1925BF0600AD1D5A /* MobSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF145B8E1925BF0600AD1D5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF145B901925BF0600AD1D5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF145B921925BF0600AD1D5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF145B961925BF0600AD1D5A /* MobSquad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobSquad-Info.plist"; sourceTree = "<group>"; };
+		CF145B981925BF0600AD1D5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF145B9A1925BF0600AD1D5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF145B9C1925BF0600AD1D5A /* MobSquad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobSquad-Prefix.pch"; sourceTree = "<group>"; };
+		CF145B9D1925BF0600AD1D5A /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		CF145B9E1925BF0600AD1D5A /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		CF145BA01925BF0600AD1D5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF145BA61925BF0600AD1D5A /* MobSquadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobSquadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF145BA71925BF0600AD1D5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CF145BAF1925BF0600AD1D5A /* MobSquadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobSquadTests-Info.plist"; sourceTree = "<group>"; };
+		CF145BB11925BF0600AD1D5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF145BB31925BF0600AD1D5A /* MobSquadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobSquadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF145B881925BF0600AD1D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145B911925BF0600AD1D5A /* CoreGraphics.framework in Frameworks */,
+				CF145B931925BF0600AD1D5A /* UIKit.framework in Frameworks */,
+				CF145B8F1925BF0600AD1D5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF145BA31925BF0600AD1D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145BA81925BF0600AD1D5A /* XCTest.framework in Frameworks */,
+				CF145BAA1925BF0600AD1D5A /* UIKit.framework in Frameworks */,
+				CF145BA91925BF0600AD1D5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF145B821925BF0600AD1D5A = {
+			isa = PBXGroup;
+			children = (
+				CF145B941925BF0600AD1D5A /* MobSquad */,
+				CF145BAD1925BF0600AD1D5A /* MobSquadTests */,
+				CF145B8D1925BF0600AD1D5A /* Frameworks */,
+				CF145B8C1925BF0600AD1D5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF145B8C1925BF0600AD1D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF145B8B1925BF0600AD1D5A /* MobSquad.app */,
+				CF145BA61925BF0600AD1D5A /* MobSquadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF145B8D1925BF0600AD1D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF145B8E1925BF0600AD1D5A /* Foundation.framework */,
+				CF145B901925BF0600AD1D5A /* CoreGraphics.framework */,
+				CF145B921925BF0600AD1D5A /* UIKit.framework */,
+				CF145BA71925BF0600AD1D5A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF145B941925BF0600AD1D5A /* MobSquad */ = {
+			isa = PBXGroup;
+			children = (
+				CF145B9D1925BF0600AD1D5A /* MSAppDelegate.h */,
+				CF145B9E1925BF0600AD1D5A /* MSAppDelegate.m */,
+				CF145BA01925BF0600AD1D5A /* Images.xcassets */,
+				CF145B951925BF0600AD1D5A /* Supporting Files */,
+			);
+			path = MobSquad;
+			sourceTree = "<group>";
+		};
+		CF145B951925BF0600AD1D5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF145B961925BF0600AD1D5A /* MobSquad-Info.plist */,
+				CF145B971925BF0600AD1D5A /* InfoPlist.strings */,
+				CF145B9A1925BF0600AD1D5A /* main.m */,
+				CF145B9C1925BF0600AD1D5A /* MobSquad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF145BAD1925BF0600AD1D5A /* MobSquadTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF145BB31925BF0600AD1D5A /* MobSquadTests.m */,
+				CF145BAE1925BF0600AD1D5A /* Supporting Files */,
+			);
+			path = MobSquadTests;
+			sourceTree = "<group>";
+		};
+		CF145BAE1925BF0600AD1D5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF145BAF1925BF0600AD1D5A /* MobSquadTests-Info.plist */,
+				CF145BB01925BF0600AD1D5A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF145B8A1925BF0600AD1D5A /* MobSquad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF145BB71925BF0600AD1D5A /* Build configuration list for PBXNativeTarget "MobSquad" */;
+			buildPhases = (
+				CF145B871925BF0600AD1D5A /* Sources */,
+				CF145B881925BF0600AD1D5A /* Frameworks */,
+				CF145B891925BF0600AD1D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobSquad;
+			productName = MobSquad;
+			productReference = CF145B8B1925BF0600AD1D5A /* MobSquad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF145BA51925BF0600AD1D5A /* MobSquadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF145BBA1925BF0600AD1D5A /* Build configuration list for PBXNativeTarget "MobSquadTests" */;
+			buildPhases = (
+				CF145BA21925BF0600AD1D5A /* Sources */,
+				CF145BA31925BF0600AD1D5A /* Frameworks */,
+				CF145BA41925BF0600AD1D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF145BAC1925BF0600AD1D5A /* PBXTargetDependency */,
+			);
+			name = MobSquadTests;
+			productName = MobSquadTests;
+			productReference = CF145BA61925BF0600AD1D5A /* MobSquadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF145B831925BF0600AD1D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = LVL6;
+				TargetAttributes = {
+					CF145BA51925BF0600AD1D5A = {
+						TestTargetID = CF145B8A1925BF0600AD1D5A;
+					};
+				};
+			};
+			buildConfigurationList = CF145B861925BF0600AD1D5A /* Build configuration list for PBXProject "MobSquad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF145B821925BF0600AD1D5A;
+			productRefGroup = CF145B8C1925BF0600AD1D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF145B8A1925BF0600AD1D5A /* MobSquad */,
+				CF145BA51925BF0600AD1D5A /* MobSquadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF145B891925BF0600AD1D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145B991925BF0600AD1D5A /* InfoPlist.strings in Resources */,
+				CF145BA11925BF0600AD1D5A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF145BA41925BF0600AD1D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145BB21925BF0600AD1D5A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF145B871925BF0600AD1D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145B9F1925BF0600AD1D5A /* MSAppDelegate.m in Sources */,
+				CF145B9B1925BF0600AD1D5A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF145BA21925BF0600AD1D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF145BB41925BF0600AD1D5A /* MobSquadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF145BAC1925BF0600AD1D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF145B8A1925BF0600AD1D5A /* MobSquad */;
+			targetProxy = CF145BAB1925BF0600AD1D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF145B971925BF0600AD1D5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF145B981925BF0600AD1D5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF145BB01925BF0600AD1D5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF145BB11925BF0600AD1D5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF145BB51925BF0600AD1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF145BB61925BF0600AD1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF145BB81925BF0600AD1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobSquad/MobSquad-Prefix.pch";
+				INFOPLIST_FILE = "MobSquad/MobSquad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF145BB91925BF0600AD1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobSquad/MobSquad-Prefix.pch";
+				INFOPLIST_FILE = "MobSquad/MobSquad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF145BBB1925BF0600AD1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobSquad.app/MobSquad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobSquad/MobSquad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MobSquadTests/MobSquadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CF145BBC1925BF0600AD1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobSquad.app/MobSquad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobSquad/MobSquad-Prefix.pch";
+				INFOPLIST_FILE = "MobSquadTests/MobSquadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF145B861925BF0600AD1D5A /* Build configuration list for PBXProject "MobSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF145BB51925BF0600AD1D5A /* Debug */,
+				CF145BB61925BF0600AD1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF145BB71925BF0600AD1D5A /* Build configuration list for PBXNativeTarget "MobSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF145BB81925BF0600AD1D5A /* Debug */,
+				CF145BB91925BF0600AD1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF145BBA1925BF0600AD1D5A /* Build configuration list for PBXNativeTarget "MobSquadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF145BBB1925BF0600AD1D5A /* Debug */,
+				CF145BBC1925BF0600AD1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF145B831925BF0600AD1D5A /* Project object */;
+}
