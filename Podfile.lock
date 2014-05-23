@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CKUITools (0.5.3)
+  - cocos2d (3.0.0-rc.5):
+    - cocos2d/kazmath
+    - cocos2d/ObjectiveChipmunk
+    - ObjectAL-for-iPhone
+  - cocos2d/kazmath (3.0.0-rc.5):
+    - ObjectAL-for-iPhone
+  - cocos2d/ObjectiveChipmunk (3.0.0-rc.5):
+    - ObjectAL-for-iPhone
+  - ObjectAL-for-iPhone (2.3)
+  - OCHamcrest (4.0.0)
+  - OCMockito (1.2.0):
+    - OCHamcrest (~> 3.0)
+  - Typhoon (HEAD based on 2.0.5):
+    - Typhoon/no-arc
+  - Typhoon/no-arc (HEAD based on 2.0.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - CKUITools
+  - cocos2d (from `~/cocos2d-iphone`)
+  - OCHamcrest
+  - OCMockito
+  - Typhoon (HEAD)
+
+EXTERNAL SOURCES:
+  cocos2d:
+    :path: ~/cocos2d-iphone
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  CKUITools: f29a7a5fafbafee96c10b42d5aaf2dc0fc58ad87
+  cocos2d: dec1359e671ef5791d1f3cb59c18007caf34f3d1
+  ObjectAL-for-iPhone: e160b08576948bd14deb445ba9766afb0d759b1a
+  OCHamcrest: d930834b4f0f61e33c47fcd2c9f9505b4f87e0cd
+  OCMockito: e4b9564b2b9165a143fd54a41dbfb55595699624
+  Typhoon: 831e56e57a8fadf9ba20311ca7bfad83be618c45
+
+COCOAPODS: 0.33.1

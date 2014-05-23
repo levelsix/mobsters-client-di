@@ -10,9 +10,23 @@
 
 #import "MSAppDelegate.h"
 
-int main(int argc, char * argv[])
-{
-  @autoreleasepool {
-      return UIApplicationMain(argc, argv, nil, NSStringFromClass([MSAppDelegate class]));
+void SigPipeHandler(int s);
+
+int main(int argc, char *argv[]) {
+  int retVal = -1;
+  @try {
+    signal(SIGPIPE, SigPipeHandler);
+    retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([MSAppDelegate class]));
   }
+  @catch (NSException* exception) {
+    NSLog(@"Uncaught exception: %@", exception.description);
+    NSLog(@"Stack trace: %@", [exception callStackSymbols]);
+  }
+  NSLog(@"Return Val: %d", retVal);
+  return retVal;
+}
+
+void SigPipeHandler(int s) {
+  // do your handling
+  NSLog(@"GOT SIGPIPE!! %d", s);
 }

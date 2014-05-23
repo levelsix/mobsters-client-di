@@ -1,0 +1,2 @@
+PODS_MOBSQUAD_COCOS_D_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers/cocos2d/Chipmunk/include/" "$(PODS_ROOT)/Headers/cocos2d/Chipmunk/objectivec/include/"
+PODS_MOBSQUAD_COCOS_D_OTHER_LDFLAGS = -lz -framework OpenGLES

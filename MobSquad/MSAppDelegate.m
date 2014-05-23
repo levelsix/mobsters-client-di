@@ -7,16 +7,32 @@
 //
 
 #import "MSAppDelegate.h"
+#import "MSAssembly.h"
+#import "MSRootViewController.h"
+#import "MSWindow.h"
+#import "SocketCommunication.h"
 
 @implementation MSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  self.window = [[MSWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  
+  _factory = [TyphoonBlockComponentFactory factoryWithAssemblies:
+              @[[MSInitAssembly assembly],
+                [MSDaoAssembly assembly],
+                [MSMapAssembly assembly],
+                [MSServiceAssembly assembly]
+                ]];
+  
+  MSRootViewController *rootViewController = [(MSInitAssembly *)_factory rootViewController];
+  [_window setRootViewController:rootViewController];
+  
+  // Override point for customization after application launch.
+  self.window.backgroundColor = [UIColor whiteColor];
+  [self.window makeKeyAndVisible];
+  
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -27,7 +43,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-  // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+  // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
   // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -39,6 +55,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  SocketCommunication *sc = [(MSInitAssembly *)_factory socketCommunication];
+  [sc initNetworkCommunicationWithDelegate:_window.rootViewController];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -1,0 +1,1 @@
+../../../../cocos2d-iphone/cocos2d/CCParticleSystemBase_Private.h
